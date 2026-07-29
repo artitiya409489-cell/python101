@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
-    margin: 0;
+    margin: 5px;
+    padding: 0;
     background-color: rgb(242, 238, 234);
     
 }
@@ -11,14 +12,14 @@ body{
     color: #453610;
     background: rgba(249, 199, 73, 0.782);
     padding-top: 20px;
-    /* padding-bottom: 10px;  */
+    
+    height: 10%;
     text-align: center;
-    padding-bottom: 20px;
-    
-    
-   
 }
-
+.header h1{
+    margin: 0;
+    padding: 20px;
+}
 
 
 .Menu{
@@ -30,6 +31,7 @@ body{
     padding: 0px;
     text-decoration: none;
     float: none;
+    margin-top: 0;
     
 }
 .Menu a{
@@ -44,21 +46,27 @@ body{
     
 }
    
-
+.main-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
 
 .เมนูหมวดหมู่{
     color: #5e4614;
     box-sizing: border-box;
     padding: 15px;
     width: 20%;
-    float: left;
-    min-height: 800px;
     background-color: rgb(255, 245, 225);
+    
    
 }
 .เมนูหมวดหมู่ a{
     color: rgb(144, 110, 26);
     text-decoration: none;
+    text-align: center;
+    
     
 }
 
@@ -68,11 +76,18 @@ body{
     box-sizing: border-box;
     background-color: rgb(255, 254, 252);
     width: 80%;
-    float: left;
-    padding: 10px 0;
-    min-height: 800px;
+    padding: 10px;
+    
 
 }
+.เนื้อหา h3{
+    text-align: center;
+}
+
+.เนื้อหา p{
+    text-align: center;
+}
+
 .เนื้อหา img{
     height: auto;
     width: 100%;
@@ -85,6 +100,7 @@ body{
     padding: 3%;
     min-height: 10%;
     font-size: 18px;
+    text-align: center;
 
 
     
@@ -95,7 +111,7 @@ body{
 }
 
 
-.สินค้าแนะนำ{
+.สินค้าแนะนำ h3{
     text-align: left;
     margin: 15px;
 }
@@ -115,7 +131,12 @@ body{
     
 }
 
-
+.สินค้า p{
+    text-align: start;
+}
+.สินค้า h3{
+    text-align: left;
+}
 .สินค้า img{
     height: 300px;
 }
@@ -131,7 +152,86 @@ body{
 }
 
 
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
 
+.cart-table th {
+    background-color: rgb(255, 245, 225); /* สีเดียวกับแถบซ้าย */
+    color: #5e4614;
+    padding: 12px;
+    border: 1px solid #e2d3b7;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-table td {
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+}
+
+.table-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.text-right {
+    text-align: right !important;
+    padding-right: 15px !important;
+}
+
+
+.total-price {
+    font-weight: bold;
+    color: #b30000;
+    font-size: 1.15rem;
+}
+
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+.btn-primary {
+    background-color: #5e4614;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #43310d;
+}
+
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+
+.btn-secondary:hover {
+    background-color: #cccccc;
+}
 
 
 
