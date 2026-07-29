@@ -1,0 +1,104 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(242, 238, 234);
+    margin: 0.5%;
+}
+
+
+.header{
+    box-sizing: border-box;
+    color: #453610;
+    background: rgb(249, 199, 73);
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    text-align: center;
+    
+   
+}
+
+
+
+.Menu{
+    
+    color: #0a0202;
+    box-sizing: border-box;
+    background-color: rgb(251, 224, 174);
+    padding: 0px;
+    text-decoration: none;
+    float: none;
+
+    
+}
+.Menu a{
+    color: #000;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+   
+
+
+.เมนูหมวดหมู่{
+    color: #876418;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 20%;
+    float: left;
+    min-height: 800px;
+    background-color: rgb(255, 245, 225);
+   
+}
+.เมนูหมวดหมู่ a{
+    color: rgb(144, 110, 26);
+}
+
+
+
+.เนื้อหา{
+    box-sizing: border-box;
+    background-color: rgb(255, 254, 252);
+    width: 80%;
+    float: left;
+    
+    height: 800px;
+
+}
+
+.footer{
+    box-sizing: border-box;
+    clear: both;
+    background-color: rgb(242, 209, 127);;
+    padding: 3%;
+    min-height: 10%;
+    
+}
+.footer a{
+    text-decoration: none;
+}
+
+
+.สินค้าแนะนำ{
+    text-align: left;
+    margin: 15px;
+}
+
+
+.สินค้า{
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 1.5px solid gold;
+    width: 30%;
+    float: left;
+    margin: 1%;
+   
+}
+
+.สินค้า img{
+    max-width: 100%;
+}
+
+.สินค้า a{
+    
+}

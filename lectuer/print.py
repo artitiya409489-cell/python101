@@ -4,13 +4,13 @@ print("I'm good and\"I will do my best\"")
 print("/\\")
 print("\ta\na\ta\ta\n\ta")
 print("""\ta
-      a\ta\ta
-      \ta""")
+a\ta\ta
+\ta""")
 
-print("100.00")
+print("100")
 print("%d" % 100)
 print("%f" %100.58)
-print("%f" %100.89)
+print("%.2f" %100.89)
 print("%.3f" %100.89)
 
 from math import pi
@@ -22,7 +22,7 @@ print("%.100F" %pi)
 print("%.1000F" %pi)
 
 
-print("my age is",18,"i have",120.50,"bath.")
+print("my age is",18,"i have",120.50,"bath.")  #for math
 print("my age is %d i have %.2f bath." %(18,120.50))
 print("my age is " + str(18) + " i have " +str(120.50) + " bath.")
 print("my age is {0} i have {1:.2f} bath.".format(18, 120.50))
@@ -70,8 +70,8 @@ first_name = input('enter your first name:')
 last_name = input("enter your last name:")
 print('hello' , first_name, last_name)
 
-number = input('enter ur number:')
-result = int(number) + 10
+number = int(input('enter ur number:'))
+result =  (number) + 10
 print( result)
 
 name = input('what is ur name? ')

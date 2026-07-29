@@ -129,4 +129,8 @@ for hours in range(24):
    for minutes in range(60):
       for seconds in range(60):
          print(hours, ":", minutes, ":",seconds)
-         
+
+#ทำ1-100 ให้วางเป็นคอลลัมเลือกคอลลลัมไ้
+num = (1,100,1)
+for num in range(1,100,1):
+    print(num,*6 )
