@@ -104,4 +104,6 @@ body{
     background-color: rgb(254, 254, 251);
     color: rgb(144, 134, 31);
     border: 1.5px solid rgb(175, 137, 41);
+    border-radius: 5px
+    margin: ;
 }
