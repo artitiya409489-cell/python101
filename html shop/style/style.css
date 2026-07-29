@@ -11,8 +11,9 @@ body{
     color: #453610;
     background: rgb(249, 199, 73);
     padding-top: 20px;
-    padding-bottom: 10px; 
+    /* padding-bottom: 10px;  */
     text-align: center;
+    
     
    
 }
@@ -104,4 +105,17 @@ body{
     background-color: rgb(254, 254, 251);
     color: rgb(144, 134, 31);
     border: 1.5px solid rgb(175, 137, 41);
+}
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(239, 234, 228);
+    
 }
