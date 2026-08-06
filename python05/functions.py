@@ -79,4 +79,105 @@ print(f"Minimum: {mini_num}")
 #    for number in numbers:
 #        total = total(numbers)
 #        if total == 
-        
+#ฝึกหน่อยอย่าขี้เกียดดดนะะะ ห้ามๆๆๆๆๆ gfuJp;d^0tc:',yo.shf^ 
+
+
+def my_function():
+    local_variable = "I'm inside the function"
+    print (local_variable)
+
+my_function()
+
+
+global_variable = "I'm outside the function"
+
+def my_function():
+    print(global_variable)
+
+my_function()
+
+print(global_variable)
+
+
+import random
+
+HEAD = 1#ใหญ่หมดคือค่าคงที่ ค่าที่ไม่เปลี่ยนแปลง
+TAILS = 2
+TOSSES = 10
+
+def tosses_coin():
+    for toss in range(TOSSES):
+        if random.randint(HEAD, TAILS) == HEAD:
+            print("Heads")
+        else:
+            print("Tails")
+tosses_coin()
+
+
+counter = 0
+def increment():
+    global counter
+    counter +=1
+
+increment()
+increment()
+
+print(counter)
+
+
+
+def add(a,b):
+    return a+b
+
+
+def subtract(a,b):
+    return a - b
+
+def multiply(a,b):
+    return a * b
+
+def divide(a,b):
+    if b == 0:
+        return "Error: Division by zero"
+    return a/b
+#import math_operations.add (10,5)
+
+#result_add = math_operations.add(10,5)
+#result_subtract = math_operations.subtract(10,5)
+#result_multiply = math_operations.multiply(10,5)
+#result_divide = math_operations.divide(10,5)
+
+
+
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))
+
+
+def fibonacci(n):
+    if n == 0:
+            return 0
+    elif n ==1:
+            return 1
+    else:
+             return fibonacci(n-1) + fibonacci(n-2)
+print(fibonacci(6))
+
+
+def factorial_iter(n):
+    result = 1
+    for i in range(2,n+1):
+        result *= i
+        return result
+
+
+prime=str(generate_prime(10))#ทำไงให้หาเลขที่เป็นจำนวนเฉพาะได้
+if prime  :
+    print(f"{prime} is a prime number"):
+else:
+    print(f"{prime} is not a prime number")
