@@ -51,7 +51,7 @@ height = 5.6
 age = int(height)
 print(age)
 
-#string to int
+#string to int- 
 num_str = "123"
 num = int(num_str)
 print(num)

@@ -17,7 +17,9 @@
     text-align: center;
 
 }
-
+.basis{
+    flex-basis: 150px;
+}
 .order1{
     order: 1;
 }

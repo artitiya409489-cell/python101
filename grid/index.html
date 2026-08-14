@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+        <div class="head"><header><img src="./images/header.jpg" alt="rr"></header></div>
+        <div>
+        <nav class="menu"><h3>Home</h3>
+                <h3>Products</h3>
+            </nav>
+            </div>
+    <div><h3>ยินดีต้อนรับสู่ร้านของเรา</h3>
+        <p>เรามีสินค้าหลากหลสยและราคาพิเศษสำหรับคุณ</p>
+        <img src="./images/shop.jpg" alt="shop">
+        </div>
+
+        <div> <h3>ร้านอยู่จังหวัดปราจีนบุรี</h3>
+        <p>การเดินทางสะดวกเข้าได้สองทาง</p>
+        <img src="./images/map.png" alt="map">
+
+    </div>
+<!-- form -->
+ <h4>สมัครสมาชิก</h4>
+    <form action="">
+        <label for="ชื่อ">ชื่อ</label><br>
+        <input type="text" id="ชื่อ" name="ชื่อ" placeholder="ชื่อจริง"><br>
+        <label for="นามสกุล">นามสกุล</label><br>
+        <input type="text" id="นามสกุล" name="นามสกุล" placeholder="นามสกุล"><br>
+            <label for="อีเมล">อีเมล</label><br>
+            <input type="email" id="อีเมล" name="อีเมล" pattern=".+domain\.com" placeholder="example@domain.com"><br>
+            <label for="รหัสผ่าน">รหัสผ่าน</label><br>
+            <input type="password" id="รหัสผ่าน" name="รหัสผ่าน" placeholder="รหัสผ่าน" minlength="8" required><br>
+            <label for="ยืนยันรหัสผ่าน">ยืนยันรหัสผ่าน</label><br>
+            <input type="password" id="ยืนยันรหัสผ่าน" name="ยืนยันรหัสผ่าน" placeholder="ยืนยันรหัสผ่าน" minlength="8" oninput="this.setCustomValidity(this.value != document.getElementById('รหัสผ่าน') .value ? 'รหัสผ่านไม่ครงกัน' : '')" required><br>
+            <label for="เบอร์โทรศัพท์">เบอร์โทรศัพท์</label><br>
+            <input type="tel" id="เบอร์โทรศัพท์" name="เบอร์โทรศัพท์" placeholder="083-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <label for="เพศ">เพศ</label><br>
+            <input type="radio" id="ชาย" name="เพศ" value="ชาย">
+            <label for="ชาย">ชาย</label><br>
+            <input type="radio" id="หญิง" name="เพศ" value="หญิง">
+            <label for="หญิง">หญิง</label><br>
+            <input type="radio" id="ไม่ระบุ" name="เพศ" value="ไม่ระบุ">
+            <label for="ไม่ระบุ">ไม่ระบุ</label><br>
+            <input type="checkbox" id="รับข่าวสาร" name="รับข่าวสาร" value="รับข่าวสาร">
+            <label for="รับข่าวสาร">รับข่าวสาร</label>
+            <input type="checkbox" id="โปรโมชั่น" name="โปรโมชั่น" value="โปรโมชั่น">
+            <label for="โปรโมชั่น">โปรโมชั่น</label>
+            <input type="checkbox" id="กิจกรรม" name="กิจกรรม" value="กิจกรรม">
+            <label for="กิจกรรม">กิจกรรม</label><br>
+            <label for="ประเภทสมาชิก">ประเภทสมาชิก</label><br>
+            <select name="ประเภทสมาชิก" id="ประเภทสมาชิก">
+                <option value="ธรรมดา">ธรรมดา</option>
+                <option value="พิเศษ">พิเศษ</option>
+            </select><br>
+           
+            <input type="checkbox" id="ยอมรับข้อกำหนด" name="ยอมรับข้อกำหนด" value="ยอมรับข้อกำหนดและเงื่อนไข">
+             <label for="ยอมรับข้อกำหนด">ยอมรับข้อกำหนดและเงื่อนไข</label><br>
+            <input type="submit" value="สมัครสมาชิก">
+
+
+    </form>
+    
+
+    </body>
+    </html>
