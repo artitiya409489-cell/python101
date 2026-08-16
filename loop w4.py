@@ -116,8 +116,8 @@ print("the total is",total)
 
 
 #nested loop
-for i in range(1,3):
-   for j in range(2,5):
+for i in range(2,5):
+   for j in range(3):
       print(i,j)
 #ระวังข้อนี้ออกสอบช่อกาว่าปริ้นมาได้อะไร
 for i in range(4):
