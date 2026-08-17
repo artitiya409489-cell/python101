@@ -50,10 +50,21 @@
 # while Password != 1234:
 #       password=("รหัสผ่านไม่ถูกต้องกรุณากรอกรหัสผ่านใหม่")
 # print("ยินดีด้วยคุณกรอกรหัสถูกต้องแล้ว")
-i = 1
-total = 0
-while i <= 100:
-    total += 1
-    i += 1
-print("ผลรวมคือ" , total)
+# i = 1
+# total = 0
+# while i <= 100:
+#     total += 1
+#     i += 1
+# print("ผลรวมคือ" , total)
 
+print(f"{'องศาเซลเซียล':^12}|{'องศาฟาเรนไฮต์':^14}|{'องศาเคลวิน':^12}")
+print("="*40)
+
+for c in range(0,100,10):
+    f=((c* 9/5)+32)
+    k=(c+273.15)
+    print(f"{c:^12.2f}|{f:^14.2f}|{k:^12.2f}")
+
+# start =int(input("enter start C"))
+# end =int(input("enter end C"))
+# step = int(input("enter start C"))
