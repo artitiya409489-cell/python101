@@ -114,13 +114,15 @@ body{
     grid-template-rows: 10px 10px;
 }
 
-.item-form select{
-   appearance: none;
-   -webkit-appearance: none;
+/* .item-form select{
+
+
+   /* appearance: none; */
+   /* -webkit-appearance: none;
    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 4l4 4 4-4' stroke='%23333' fill='none' stroke-width='2'/></svg>");
    background-repeat: no-repeat;
-   background-position: right 12px center;
-}
+   background-position: right 12px center; */
+ 
 
 .item-form input[type="submit"]{
    width: 100%;

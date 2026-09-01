@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  /* vh=เต้มวิวหน้าจอ  */
+   background-color: rgb(248, 247, 246);
+}
+
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.item-menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #A6323C;
+    padding: 15px 0;
+}
+
+.item-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    /* tou nahh */
+  padding-left: 50px;
+}
+
+.item-menu a:hover {
+    color: #ffd700;
+    /* เม้าชี้ละเปลี่ยนสี */
+}
+
+
+.item-head {
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.item-head img {
+    max-width: 250px;
+    height: auto;
+}
+
+
+.item-h2 {
+    grid-area: h2;
+    text-align: center;
+    color: #003366;
+    font-size: 27px;
+}
+
+.item-h3 {
+    grid-area: h3;
+    text-align: center;
+    color: #555555;
+    font-size: 19px;
+    margin-top: 10px;
+}
+.item-h4 {
+    grid-area: h4;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 40px;
+}
+.item-h5 {
+    grid-area: h4;
+    text-align: left;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 55px;
+}
+.item-p {
+    text-indent: 15px;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.item-p2 {
+   
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+
+.item-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+.item-button a {
+    background-color: #ffe45d;
+    color: #030776;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+.item-button a:hover {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+
+.item-footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #A6323C;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+.item-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #A6323C;
+}
+
+.item-table {
+    grid-area: table;   /* ถ้าใช้ grid-template-areas ต้องเพิ่ม "table" เข้าไปในผังด้วย */
+    padding: 10px;
+}
+
+.table-title {
+    text-align: left;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.program-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* รวมเส้นขอบตารางไม่ให้ซ้อน */
+    font-size: 15px;
+}
+
+.program-table th,
+.program-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.program-table thead th {
+    background-color: #A6323C;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* respon: จอเล็กให้ scroll แนวนอนได้ */
+@media (max-width: 600px) {
+    .program-table {
+        font-size: 13px;
+    }
+    .program-table th,
+    .program-table td {
+        padding: 8px;
+    }
+}
