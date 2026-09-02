@@ -55,4 +55,24 @@ record = (1, "john", 20,3.75)
 with open("records.bin","wb") as file:
     data = struct.pack("i20sif", record[0], record[1].encode(), record[2], record[3])
     file.write(data)
-    
+
+
+# import struct
+# with open("records.bin","rb") as file:
+#     data = file.read(struct.calcsize("i20sif"))
+#     record = struct.Struct("i20sif , data)")
+#     record = (record.unpack("i20sif , data"))
+
+# import struct
+# record_format = "i20sif"
+
+# def example_w_plus_mode():
+
+
+def example_a_plus_mode():
+    with open("example_a+.txt", "w+") as file:
+        file.write("Hello, World!\n")
+        file.write("This is a new line.\n")
+        file.seek(0)  # Move the file pointer to the beginning
+        contents = file.read()
+        print(contents)
