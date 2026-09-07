@@ -49,10 +49,31 @@ body {
 }
 
 .item-head img {
+    max-width: 50px;
+    width:30px;
+}
+/* ================= HEADER ================= */
+
+.item-logo {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.item-logo img {
     max-width: 250px;
     height: auto;
 }
+/* ================= HEADER (ชื่อมหาลัย) ================= */
 
+.item-header {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #8f1616;
+}
 
 /* ================= TEXT ================= */
 
@@ -151,10 +172,16 @@ body {
     cursor: pointer;
 }
 
-.item-button2 button:hover {
-    background-color: #003366;
-    color: #ffffff;
+.item-button2 a {
+    background-color: #ffe45d;
+    color: #030776;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+
 /* ================= TABLE ================= */
 
 .item-table {
@@ -218,6 +245,88 @@ body {
 
 .item-ยืนยัน {text-align:center;}
 
+/* Login */
+
+.login-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40vh;
+            padding: 20px;
+        }
+        .login-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+            padding: 30px 25px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+        .login-box h2 {
+            margin-bottom: 24px;
+            font-size: 1.3rem;
+        }
+        .login-field {
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        .login-field label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        .login-field input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+            .login-hint {
+        display: block;
+        margin-top: 4px;
+        font-size: 13px;
+        color: #888888;
+    }
+            .login-submit {
+                width: 100%;
+                padding: 10px;
+                margin-top: 8px;
+            border: none;
+            border-radius: 6px;
+            background-color: #1e5aa8;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+         .login-submit a{color:#ddd;
+        text-decoration:none;}
+        /* ไม่มีเส้นใต้ */
+        .login-submit:hover {
+            background-color: #164280;
+           
+        }
+        .login-register {
+            margin-top: 18px;
+            font-size: 1rem;
+        }
+        .login-register a {
+            color: #1e5aa8;
+            text-decoration: none;
+        }
+        .login-register a:hover {
+            text-decoration: underline;
+        }
+        .login-error {
+            color: #c0392b;
+            font-size: 0.85rem;
+            margin-top: -10px;
+            margin-bottom: 12px;                                                  
+            display: none;
+        }
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 600px) {
@@ -269,3 +378,284 @@ body {
         padding: 8px 5px;
     }
 }
+/* ข้อมูลของฉัน */
+.a4-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .a4-page {
+            background: #ffffff;
+            width: 794px;      /* A4 @ 96dpi */
+            min-height: 1123px;
+            max-width: 100%;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            padding: 60px 70px;
+            box-sizing: border-box;
+        }
+
+        .a4-title {
+            text-align: center;
+            color: #A6323C;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .a4-welcome {
+            text-align: center;
+            font-size: 19px;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        .a4-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+        }
+
+        .a4-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .a4-table td.label {
+            width: 240px;
+            color: #555555;
+            font-weight: bold;
+        }
+
+        .a4-tuition {
+            margin-top: 25px;
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            color: #A6323C;
+        }
+
+        .a4-thanks {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 16px;
+            color: #000000;
+        }
+
+        .a4-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .a4-buttons a {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333333;
+        }
+
+        .btn-back:hover {
+            background-color: #cccccc;
+        }
+
+        .btn-edit {
+            background-color: #ffe45d;
+            color: #030776;
+        }
+
+        .btn-edit:hover {
+            background-color: #003366;
+            color: #ffffff;
+        }
+
+
+         .form-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .form-box {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            padding: 35px 40px;
+            width: 100%;
+            max-width: 750px;
+        }
+
+        .form-box h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #003366;
+        }
+
+        .form-field {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .form-field label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .form-field input,
+        .form-field select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            background: #ffffff;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-field {
+            flex: 1;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .form-buttons a,
+        .form-buttons button {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333333;
+        }
+
+        .btn-back:hover {
+            background-color: #cccccc;
+        }
+
+        .btn-next {
+            background-color: #ffe45d;
+            color: #030776;
+        }
+
+        .btn-next:hover {
+            background-color: #003366;
+            color: #ffffff;
+        }
+
+
+         .form-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .form-box {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            padding: 35px 40px;
+            width: 100%;
+            max-width: 750px;
+        }
+
+        .form-box h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #003366;
+        }
+
+        .form-field {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .form-field label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .form-field input,
+        .form-field select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            background: #ffffff;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-field {
+            flex: 1;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .form-buttons a,
+        .form-buttons button {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333333;
+        }
+
+        .btn-back:hover {
+            background-color: #cccccc;
+        }
+
+        .btn-next {
+            background-color: #ffe45d;
+            color: #030776;
+        }
+
+        .btn-next:hover {
+            background-color: #003366;
+            color: #ffffff;
+        }

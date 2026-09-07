@@ -8,19 +8,60 @@
 </head>
 <body>
     <div class="grid">
+       <div class="grid">
+        <header class="item item-header">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</header>
     <nav class="item item-menu">
         <a href="./index.html">หน้าแรก</a>
         <a href="./ขั้นตอนการสมัคร.html">ขั้นตอนการสมัคร</a>
         <a href="./ติดต่อเรา.html">ติดต่อเรา</a>
     </nav>
-    <header class="item item-head"><img src="./immage/logo_kmutnb-(6).png" alt=""></header>
-        <h2 class="item item-h2">กลุ่มงานรับสมัครนักศึกษาใหม่ ประจำปีการศึกษา2570</h2><br>
-        <h3 class="item item-h3">หากสนใจสามารถสมัครศึกษาได้ที่นี่</h3><br>
-    <button  class="item item-button"><a href="./ข้อมูลการสมัคร.html">เริ่มต้นการสมัคร</a>
-    </button><br>
-    <footer class="item item-footer"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.kmutnb.ac.th%2Ffaculty-and-agencies%2Fprachin-campus.aspx%3Ffbclid%3DIwcGRvZgVleHRuA2FlbQIxMABicmlkETFYWXphRTQ4S00xTk5UT1pRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsIOeJzZkfWWwvNygyeZ1esvUipdM-WHYrgIwE5UDQOzFPaUgATMLIM5cCkx_aem_eY9rqIrSB7QNKpOEVMj6SA&h=AUBbkbvCUi55y59-kZc2TKRIU2HmcZs7ALTGXBsm-K4JSbqLB4-RGOZ2unKpYDqMYZBDcbNJzSlnH-m28MnSYnNid7P4mkWFqxNDB8fFLsglH3Jii6kutWQjYGY0qLs" target="_blank">แหล่งอ้างอิง: มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี (มจพ.ปราจีนบุรี)</a>
-    </footer>
+     <div class="item item-logo">
+        <img src="./immage/logo_kmutnb-(6).png" alt="logo">
+    </div>
+     <h2 class="item item-h2">กลุ่มงานรับสมัครนักศึกษาใหม่ ประจำปีการศึกษา2570</h2><br>
+        <div class="login-wrapper">
+            <div class="login-box">
+                <h2>เข้าสู่ระบบ</h2>
+               <form id="loginForm" action="./ข้อมูลการสมัครของฉัน.html" method="get">
+                    <div class="login-field">
+                        <label for="idcard">เลขบัตรประจำตัวประชาชน</label>
+                        <input
+                            type="text"
+                            id="idcard"
+                            name="idcard"
+                            maxlength="13"
+                            inputmode="numeric"
+                            pattern="[0-9]{13}"
+                            placeholder="กรอกเลขบัตรประชาชน 13 หลัก"
+                            required
+                        >
+                    </div>
+                    <div class="login-field">
+                        <label for="password">รหัสผ่าน</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="กรอกรหัสผ่าน"
+                            minlength="8"
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+                            title="รหัสผ่านต้องมีตัวพิมพ์เล็ก พิมพ์ใหญ่ ตัวเลข และยาวอย่างน้อย 8 ตัวอักษร"
+                            required
+                        >
+                        <small class="login-hint">ต้องมีตัวพิมพ์เล็ก, ตัวพิมพ์ใหญ่, ตัวเลข และยาวอย่างน้อย 8 ตัวอักษร</small>
+                    </div>
+                    <p class="login-error" id="loginError">กรุณากรอกเลขบัตรประชาชนให้ครบ 13 หลัก</p>
+                    <button type="submit" class="login-submit"><a href="./ข้อมูลการสมัครของฉัน.html">เข้าสู่ระบบ</a></button>
+                </form>
+                <div class="login-register">
+                    ยังไม่มีบัญชี? <a href="./สมัครสร้างบัญชี.html">สมัครบัญชีใหม่</a>
+                </div>
+                 
+            </div>
         </div>
+        <footer class="item item-footer"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.kmutnb.ac.th%2Ffaculty-and-agencies%2Fprachin-campus.aspx%3Ffbclid%3DIwcGRvZgVleHRuA2FlbQIxMABicmlkETFYWXphRTQ4S00xTk5UT1pRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsIOeJzZkfWWwvNygyeZ1esvUipdM-WHYrgIwE5UDQOzFPaUgATMLIM5cCkx_aem_eY9rqIrSB7QNKpOEVMj6SA&h=AUBbkbvCUi55y59-kZc2TKRIU2HmcZs7ALTGXBsm-K4JSbqLB4-RGOZ2unKpYDqMYZBDcbNJzSlnH-m28MnSYnNid7P4mkWFqxNDB8fFLsglH3Jii6kutWQjYGY0qLs" target="_blank">แหล่งอ้างอิง: มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี (มจพ.ปราจีนบุรี)</a>
+    </footer>
+    </div>
 
 
 </body>
