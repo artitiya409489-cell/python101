@@ -158,46 +158,54 @@
 # print(phonebook["mickey"])  # Output: 777-222
 # print(phonebook.get("donald"))  # Output: 777-333
 
-# key = "pluto"
-# if key in phonebook:
-#     print(phonebook["pluto"])
-# else:
-#     print(f"{key} not found in phonebook")  # Output: pluto not found in phonebook
+key = "pluto"
+if key in phonebook:
+    print(phonebook["pluto"])
+else:
+    print(f"{key} not found in phonebook")  # Output: pluto not found in phonebook
 
-# phonebook["simmon"] = "777-4567"
-# phonebook["pluto"] = "777-4444"
-#   # Update existing entry
-# phonebook["mickey"] = "777-2122"  # Update existing entry
-# print(phonebook)  # Output: {'anirach': '777-111', '
+phonebook["simmon"] = "777-4567"
+phonebook["pluto"] = "777-4444"
+  # Update existing entry
+phonebook["mickey"] = "777-2122"  # Update existing entry
+print(phonebook)  # Output: {'anirach': '777-111', '
 
-# del phonebook["simmon"]  # Remove entry
-# print(phonebook)  # Output: {'anirach': '777-111', 'mickey': '777-2122', 'pluto': '777-4444'}
+del phonebook["simmon"]  # Remove entry
+print(phonebook)  # Output: {'anirach': '777-111', 'mickey': '777-2122', 'pluto': '777-4444'}
 
 
 
 
 
 # student = {"name": "Alice", "age": 25, "grade": "A"}
-# student["age"] = 26  # Update age
-# student["major"] = "Computer Science"  # Add new key-value pair
-# print(student)  # Output: {'name': 'Alice', 'age': 26, 'grade': 'A', 'major': 'Computer Science'}
+student["age"] = 26  # Update age
+student["major"] = "Computer Science"  # Add new key-value pair
+print(student)  # Output: {'name': 'Alice', 'age': 26, 'grade': 'A', 'major': 'Computer Science'}
 
-# del student["grade"]  # Remove key-value pair
-# print(student)  # Output: {'name': 'Alice', 'age': 26, 'major': 'Computer Science'}
+del student["grade"]  # Remove key-value pair
+print(student)  # Output: {'name': 'Alice', 'age': 26, 'major': 'Computer Science'}
 
-# removed_major = student.pop("major")  # Remove key-value pair and return value
-# print(removed_major)  # Output: Computer Science
-# print(student)
-
-
-
-# student = {"name": "Alice", "age": 25, "grade": "A","major":"Computor "}
-
-# print(student.key())
-# print(student.values())
-# print(student.items())
-
-# print(student.get("name"))
+removed_major = student.pop("major")  # Remove key-value pair and return value
+print(removed_major)  # Output: Computer Science
+print(student)
 
 
-phonebook =
+
+student = {"name": "Alice", "age": 25, "grade": "A","major":"Computor "}
+
+print(student.key())
+print(student.values())
+print(student.items())
+
+print(student.get("name"))
+
+
+phonebook = {'anirach':"777-1111","mikey":"777-2222","donal":"777-3333","pluto":"777-4444"}
+
+heroesdict = {}
+heroesdict ["hulk"] = "888-1111"
+heroesdict ["iron man"] = "888-2222"
+print(heroesdict.get("hulk","key not found"))
+
+
+ex2ยากพอๆไฟนอลลลล

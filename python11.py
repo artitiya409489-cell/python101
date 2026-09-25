@@ -60,3 +60,4 @@ double =create_multiplie
 triple = create_multiplier(3)
 print(double(5))
 print(triple(3))
+# **mai ook shobb***

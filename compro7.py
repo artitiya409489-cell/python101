@@ -76,3 +76,4 @@ def example_a_plus_mode():
         file.seek(0)  # Move the file pointer to the beginning
         contents = file.read()
         print(contents)
+        

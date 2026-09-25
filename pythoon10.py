@@ -62,11 +62,32 @@
 # if response = requests.
 
 
-from flask import Flask
-app = Flask(__namee__)
-@app.route("/")
-def home():
-    return "hello,Flask!"
-if __name__ == "__main__":
-    app.rin(debug=true)
-    
+# from flask import Flask
+# app = Flask(__namee__)
+# @app.route("/")
+# def home():
+#     return "hello,Flask!"
+# if __name__ == "__main__":
+#     app.rin(debug=true)
+
+
+
+# form flask import flask,render_template_string
+# app = flask(__name__)
+# html_template ="""
+# <!DOCTYPE html>
+# <html lang"en
+# """
+# @app.route("/")
+# def home():
+#     return render_template_string(html_template,name="alice")
+# @app.route("/greet")
+
+
+
+# import sqlite3
+# comm = sqlite3.connect('mydatabase.db')
+# cur = conn.cursor()
+# cur.execute('''
+# create table 
+# ''')
