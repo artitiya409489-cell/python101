@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อัพโหลดเอกสาร</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <style>
+        .upload-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .upload-box {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            padding: 35px 40px;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .upload-box h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 8px;
+        }
+
+        .upload-sub {
+            text-align: center;
+            color: #666666;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+        }
+
+        .upload-field {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .upload-field label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .upload-note {
+            display: block;
+            font-size: 0.8rem;
+            color: #888888;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+        .upload-field input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px dashed #A6323C;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            box-sizing: border-box;
+            background: #fff8f8;
+        }
+
+        .upload-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .upload-buttons a,
+        .upload-buttons button {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn-back {
+            background-color: #e0e0e0;
+            color: #333333;
+        }
+
+        .btn-back:hover {
+            background-color: #cccccc;
+        }
+
+        .btn-next {
+            background-color: #ffe45d;
+            color: #030776;
+        }
+
+        .btn-next:hover {
+            background-color: #003366;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header class="item item-header">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</header>
+    <nav class="item item-menu">
+        <a href="./index.html">หน้าแรก</a>
+        <a href="./ขั้นตอนการสมัคร.html">ขั้นตอนการสมัคร</a>
+        <a href="./ติดต่อเรา.html">ติดต่อเรา</a>
+    </nav>
+    <div class="item item-logo">
+        <img src="./immage/logo_kmutnb-(6).png" alt="logo">
+    </div>
+
+    <div class="upload-wrapper">
+        <div class="upload-box">
+            <h2>แนบเอกสารประกอบการสมัคร</h2>
+            <p class="upload-sub">รองรับไฟล์ PDF หรือรูปภาพ (JPG, PNG) ขนาดไม่เกิน 5 MB ต่อไฟล์</p>
+
+            <form id="uploadForm" action="./ยืนยันข้อมูล.html" method="get">
+                <div class="upload-field">
+                    <label for="idcardFile">สำเนาบัตรประจำตัวประชาชน</label>
+                    <span class="upload-note">ถ่ายให้เห็นข้อมูลชัดเจนทุกช่อง</span>
+                    <input type="file" id="idcardFile" name="idcardFile" accept=".pdf,.jpg,.jpeg,.png" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="houseRegFile">สำเนาทะเบียนบ้าน</label>
+                    <span class="upload-note">สำเนาทะเบียนบ้านของตัวผู้สมัคร</span>
+                    <input type="file" id="houseRegFile" name="houseRegFile" accept=".pdf,.jpg,.jpeg,.png" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="fatherIdcardFile">สำเนาบัตรประจำตัวประชาชนบิดา</label>
+                    <span class="upload-note">ถ่ายให้เห็นข้อมูลชัดเจนทุกช่อง</span>
+                    <input type="file" id="fatherIdcardFile" name="fatherIdcardFile" accept=".pdf,.jpg,.jpeg,.png" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="motherIdcardFile">สำเนาบัตรประจำตัวประชาชนมารดา</label>
+                    <span class="upload-note">ถ่ายให้เห็นข้อมูลชัดเจนทุกช่อง</span>
+                    <input type="file" id="motherIdcardFile" name="motherIdcardFile" accept=".pdf,.jpg,.jpeg,.png" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="transcriptFile">ใบแสดงผลการเรียน (Transcript)</label>
+                    <span class="upload-note">ปพ.1 หรือเอกสารแสดงผลการเรียนล่าสุด</span>
+                    <input type="file" id="transcriptFile" name="transcriptFile" accept=".pdf,.jpg,.jpeg,.png" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="portfolioFile">แฟ้มสะสมผลงาน (Portfolio)</label>
+                    <span class="upload-note">ไฟล์ PDF ตามเงื่อนไขของโครงการ</span>
+                    <input type="file" id="portfolioFile" name="portfolioFile" accept=".pdf" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="photoFile">รูปถ่ายหน้าตรง</label>
+                    <span class="upload-note">ชุดนักเรียน/ชุดสุภาพ ถ่ายไม่เกิน 6 เดือน</span>
+                    <input type="file" id="photoFile" name="photoFile" accept=".jpg,.jpeg,.png" required>
+                </div>
+
+                <div class="upload-field">
+                    <label for="addressFile">เอกสารแสดงภูมิลำเนา</label>
+                    <span class="upload-note">สำหรับโครงการที่มีเงื่อนไขด้านพื้นที่ (ถ้ามี)</span>
+                    <input type="file" id="addressFile" name="addressFile" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="upload-field">
+                    <label for="otherFile">เอกสารรับรองอื่น ๆ</label>
+                    <span class="upload-note">ตามที่โครงการกำหนด (ถ้ามี)</span>
+                    <input type="file" id="otherFile" name="otherFile" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="upload-buttons">
+                    <a href="./ประวัติส่วนตัว.html" class="btn-back">ย้อนกลับ</a>
+                    <button type="submit" class="btn-next"><a href="./ยืนยันการสมัคร.html">ถัดไป</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="item item-footer"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.kmutnb.ac.th%2Ffaculty-and-agencies%2Fprachin-campus.aspx%3Ffbclid%3DIwcGRvZgVleHRuA2FlbQIxMABicmlkETFYWXphRTQ4S00xTk5UT1pRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsIOeJzZkfWWwvNygyeZ1esvUipdM-WHYrgIwE5UDQOzFPaUgATMLIM5cCkx_aem_eY9rqIrSB7QNKpOEVMj6SA&h=AUBbkbvCUi55y59-kZc2TKRIU2HmcZs7ALTGXBsm-K4JSbqLB4-RGOZ2unKpYDqMYZBDcbNJzSlnH-m28MnSYnNid7P4mkWFqxNDB8fFLsglH3Jii6kutWQjYGY0qLs" target="_blank">แหล่งอ้างอิง: มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี (มจพ.ปราจีนบุรี)</a>
+    </footer>
+        </div>
+
+</body>
+</html>

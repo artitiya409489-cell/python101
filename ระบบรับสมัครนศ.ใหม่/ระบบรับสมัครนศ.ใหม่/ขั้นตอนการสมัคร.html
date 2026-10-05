@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขั้นตอนการสมัคร</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <style>
+        .steps-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .steps-box {
+            width: 100%;
+            max-width: 850px;
+        }
+
+        .steps-title {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        .step-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+            padding: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #A6323C;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            color: #003366;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .step-content p {
+            color: #333333;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .step-content img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header class="item item-header">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</header>
+    <nav class="item item-menu">
+        <a href="./index.html">หน้าแรก</a>
+        <a href="./ขั้นตอนการสมัคร.html">ขั้นตอนการสมัคร</a>
+        <a href="./ติดต่อเรา.html">ติดต่อเรา</a>
+    </nav>
+    <div class="item item-logo">
+        <img src="./immage/logo_kmutnb-(6).png" alt="logo">
+    </div>
+
+    <div class="steps-wrapper">
+        <div class="steps-box">
+            <h2 class="steps-title">ขั้นตอนการสมัครเข้าศึกษา</h2>
+
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>กดปุ่ม "สมัคร" ที่หน้าแรก</h3>
+                    <p>เริ่มต้นด้วยการกดปุ่มสมัครที่หน้าแรกของเว็บไซต์</p>
+                    <img src="./immage/step1.png" alt="ขั้นตอนที่ 1">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>อ่านรายละเอียดการรับสมัคร</h3>
+                    <p>อ่านรายละเอียดเงื่อนไขและคุณสมบัติผู้สมัครให้ครบถ้วน แล้วเลื่อนหน้าจอลงมา</p>
+                    <img src="./immage/step2.png" alt="ขั้นตอนที่ 2">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>ยืนยันว่าอ่านรายละเอียดแล้ว</h3>
+                    <p>ติ๊กปุ่ม "ฉันได้อ่านรายละเอียดทั้งหมดแล้ว" จากนั้นกด "ถัดไป"</p>
+                    <img src="./immage/step3.png" alt="ขั้นตอนที่ 3">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>สมัครบัญชีใหม่ หรือเข้าสู่ระบบ</h3>
+                    <p>ผู้สมัครใหม่ให้กด "สมัครบัญชีใหม่" ส่วนผู้ที่เคยสมัครไว้แล้วและต้องการกลับมาดู/แก้ไขข้อมูล ให้กด "เข้าสู่ระบบ" แทน (ดูรายละเอียดขั้นตอนที่ 12)</p>
+                    <img src="./immage/step4.png" alt="ขั้นตอนที่ 4">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>กรอกข้อมูลสมัครบัญชี</h3>
+                    <p>กรอกข้อมูลสำหรับสร้างบัญชีให้ครบถ้วน แล้วกดปุ่ม "สมัครบัญชี"</p>
+                    <img src="./immage/step5.png" alt="ขั้นตอนที่ 5">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3>กรอกประวัติส่วนตัว</h3>
+                    <p>กรอกประวัติส่วนตัวให้ครบทุกช่อง แล้วเลื่อนหน้าจอลงมา</p>
+                    <img src="./immage/step6.png" alt="ขั้นตอนที่ 6">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">7</div>
+                <div class="step-content">
+                    <h3>เลือกคณะและสาขาวิชา</h3>
+                    <p>เลือกคณะและสาขาวิชาที่ต้องการจะศึกษาต่อ จากนั้นกดปุ่ม "ถัดไป"</p>
+                    <img src="./immage/step7.png" alt="ขั้นตอนที่ 7">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">8</div>
+                <div class="step-content">
+                    <h3>แนบไฟล์เอกสาร</h3>
+                    <p>แนบไฟล์เอกสารประกอบการสมัครให้ครบ แล้วเลื่อนหน้าจอลงมา</p>
+                    <img src="./immage/step8.png" alt="ขั้นตอนที่ 8">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">9</div>
+                <div class="step-content">
+                    <h3>ยืนยันข้อมูลการสมัคร</h3>
+                    <p>ตรวจสอบข้อมูลทั้งหมด แล้วกดปุ่ม "ถัดไป" เพื่อยืนยันการสมัคร</p>
+                    <img src="./immage/step9.png" alt="ขั้นตอนที่ 9">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">10</div>
+                <div class="step-content">
+                    <h3>สมัครสำเร็จ</h3>
+                    <p>เมื่อสมัครสำเร็จแล้ว สามารถดูข้อมูลการสมัครได้จากปุ่ม "ดูข้อมูลการสมัคร"</p>
+                    <img src="./immage/step10.png" alt="ขั้นตอนที่ 10">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">11</div>
+                <div class="step-content">
+                    <h3>แก้ไขข้อมูล</h3>
+                    <p>หากต้องการแก้ไขข้อมูลที่กรอกไป สามารถกดปุ่ม "แก้ไขข้อมูล" ได้จากหน้าข้อมูลการสมัครของฉัน</p>
+                    <img src="./immage/step11.png" alt="ขั้นตอนที่ 11">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">12</div>
+                <div class="step-content">
+                    <h3>กลับมาดูข้อมูลภายหลัง</h3>
+                    <p>หากต้องการกลับมาดูว่าข้อมูล/เอกสารของตัวเองเป็นอย่างไรในภายหลัง ให้กลับมาที่ขั้นตอนที่ 4 แล้วกดปุ่ม "เข้าสู่ระบบ" ก็จะสามารถดูข้อมูลและแก้ไขได้เช่นเดิม</p>
+                    <img src="./immage/step12.png" alt="ขั้นตอนที่ 12">
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <a href="./index.html" style="text-decoration: none; background-color: #e0e0e0; color: #333333; padding: 12px 30px; border-radius: 10px; font-weight: bold;">ย้อนกลับไปหน้าแรก</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="item item-footer"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.kmutnb.ac.th%2Ffaculty-and-agencies%2Fprachin-campus.aspx%3Ffbclid%3DIwcGRvZgVleHRuA2FlbQIxMABicmlkETFYWXphRTQ4S00xTk5UT1pRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHsIOeJzZkfWWwvNygyeZ1esvUipdM-WHYrgIwE5UDQOzFPaUgATMLIM5cCkx_aem_eY9rqIrSB7QNKpOEVMj6SA&h=AUBbkbvCUi55y59-kZc2TKRIU2HmcZs7ALTGXBsm-K4JSbqLB4-RGOZ2unKpYDqMYZBDcbNJzSlnH-m28MnSYnNid7P4mkWFqxNDB8fFLsglH3Jii6kutWQjYGY0qLs" target="_blank">แหล่งอ้างอิง: มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี (มจพ.ปราจีนบุรี)</a>
+    </footer>
+        </div>
+
+</body>
+</html>
